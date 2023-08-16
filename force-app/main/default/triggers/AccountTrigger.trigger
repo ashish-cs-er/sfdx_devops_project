@@ -1,4 +1,4 @@
-trigger AccountTrigger on SOBJECT (before insert, after insert) {
+trigger AccountTrigger on Acount (before insert, after insert) {
     
     if(Trigger.isInsert && Trigger.isBefore){
         AccountTriggerHandler.beforeInsert(Trigger.new);
