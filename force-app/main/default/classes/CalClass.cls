@@ -7,4 +7,8 @@ public with sharing class CalClass {
     public static Integer add(){
         return (3+4);
     }
+
+    public static Integer sub(){
+        return (3-4);
+    }
 }

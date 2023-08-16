@@ -10,4 +10,11 @@ public with sharing class CalClassTest {
         Test.stopTest();
     }
 
+    @isTest
+    private static void subTest(){
+        Test.startTest();
+        System.assertEquals(-1, CalClass.sub());
+        Test.stopTest();
+    }
+
 }
