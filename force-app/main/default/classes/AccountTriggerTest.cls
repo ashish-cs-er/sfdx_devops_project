@@ -12,9 +12,9 @@ public with sharing class AccountTriggerTest {
         Test.stopTest();
 
         //asserts
-        Account acc = [Select Id, NumberofEmployees 
+        Account acct = [Select Id, NumberofEmployees 
         from Account where id =: acc.id];
-        System.assertEquals(1, acc.NumberOfEmployees);
+        System.assertEquals(1, acct.NumberOfEmployees);
 
         List<Contact> conList = [Select Id, Name
         from Contact where AccountId =:acc.Id];
